@@ -246,7 +246,7 @@
                 <p class="subtitle">
                     <ul class="fourth-content-element">
                         <li>
-                            <a class="fourth-content-element-title">En savoir alus sur la Compagnie du Réfectoire
+                            <a class="fourth-content-element-title">En savoir plus sur la Compagnie du Réfectoire
                                 <img src="" alt="">
                             </a>
                         </li>

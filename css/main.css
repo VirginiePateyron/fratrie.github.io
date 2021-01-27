@@ -1,9 +1,21 @@
 body {
     font-family:'Kurale', serif;
+    margin: auto;
+    text-align: center;
+    line-height: 1.8;
+    font-size: 1.6rem;
 }
 
 h1,
 h2,
 h3 {
     font-family: 'Josefin Slab', serif;
+}
+
+img,
+figure,
+video {
+    display: flex;
+    justify-content: center;
+    margin: auto;
 }

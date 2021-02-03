@@ -3,7 +3,7 @@
 
 
 body {
-    font-family:'Kurale', serif;
+    font-family: arial;
     margin: auto;
     text-align: center;
     line-height: 1.8;
@@ -16,6 +16,10 @@ h3 {
     font-family: 'Josefin Slab', serif;
 }
 
+h2 {
+    text-align: center;
+}
+
 img,
 figure,
 video {
@@ -23,3 +27,34 @@ video {
     justify-content: center;
     margin: auto;
 }
+
+
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.header .nav-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.first-content-element {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+.third-content-element {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.fourth-content-element {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+

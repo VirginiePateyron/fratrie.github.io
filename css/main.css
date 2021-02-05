@@ -35,10 +35,35 @@ video {
     margin: auto;
 }
 
+
+.nav-primary {
+    overflow: hidden;
+    
+    position: fixed;
+    top: 10%;
+    width: 100%;
+
+    background-color: #fff;
+    border-bottom: .2px solid grey
+}
+
+.nav-primary a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
 .header .nav-content {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+}
+
+.main-container {
+    padding: 16px;
+    margin-top: 10rem;
 }
 
 .first-content-element {

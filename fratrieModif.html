@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De l'autre côté</title>
+
+    <!-- best : une meta description qui s'affichera dans le descriptif du site au moment de la recherche -->
+</head>
+<body>
+    <header>
+        <h1>
+            LA REPLIQUE<br>De l'autre côté 
+        </h1>
+
+        <!-- 
+            Ici une façon plus propre d'écrire le h1 
+            ( dans le h1, je vais vectoriser le titre pour transformer la typo en image)
+
+            <h1>La réplique</h1>
+            <p class="h1-subtitle">De l'autre côté</p>
+         -->
+        
+
+         <!-- Attention ici : il manque la nav : https://developer.mozilla.org/fr/docs/Web/HTML/Element/nav -->
+        <ul>
+            <li><a href="#duspectacle">...du spectacle</a></li>
+            <li><a href="#envideo">...en vidéo</a></li>
+            <li><a href="#lapochettesurprise">...des trésors</a></li>
+            <li><a href="#desvisagesetdesvoix">...des visages et des voix</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+    </header>
+
+    <div>
+        <h2 id="duspectacle">DE L'AUTRE COTE ... DU SPECTACLE</h2>
+
+        <!-- il nous manque l'image ici, comme on clique sur l'élement entier pour ouvrir la modale, l'image ne peut pas être décorative (et donc on ne peut pas l'inclure dans le CSS. Par contre, on pourrait choisir d'inclure l'image dans un pseudo-element :before (donc dans le CSS).  
+
+        *** La bonne solution : Comme on va rendre le site dynamique avec WordPress, on va plutôt choisir de mettre une image dans le HTML, car on doit cibler le HTML quand on convertit le code en PHP.
+
+            Une solution lisible dans le HTML :
+         <li>
+            <div class="first-content-element-img">
+                <img src="" alt="">
+            </div>
+            <p>Un projet</p>
+        </li> -->
+        <ul>
+            <li>Un projet</li>
+            <li>L'écriture</li>
+            <li>Le décor</li>
+            <li>La musique</li>
+            <li>Les lumières</li>
+            <li>Les costumes</li>
+            <li>La répétition</li>
+            <li>La représentation</li>
+        </ul>
+    </div>
+
+    <div>
+        <h2 id="envideo">DE L'AUTRE COTE ... EN VIDEO</h2>
+        <video src=".mp4" controls></video>
+    </div>
+    
+    <div>
+        <h2 id="lapochettesurprise">DE L'AUTRE COTE ... DE LA POCHETTE SURPRISE</h2>
+        
+    </div>
+
+    <div>
+        <h2 id="desvisagesetdesvoix">DE L'AUTRE COTE ... DES VISAGES ET DES VOIX</h2>
+
+        <!-- Ici, il faut que le son soit lié à l'element enfant de la liste (li). Une possibilité qui passe au W3C :
+         <li>
+            <figure>
+                <figcaption>Listen to the T-Rex:</figcaption>
+                <audio
+                    controls
+                    src="/media/cc0-audio/t-rex-roar.mp3">
+                        Your browser does not support the
+                        <code>audio</code> element.
+                </audio>
+            </figure>
+        </li> -->
+        <ul>
+            <li>Portrait 1</li>
+            <audio src=".mp3" controls></audio>
+            <li>Portrait 2</li>
+            <audio src=".mp3" controls></audio>
+            <li>Portrait 3</li>
+            <audio src=".mp3" controls></audio>
+            <li>Portrait 4</li>
+            <audio src=".mp3" controls></audio>
+            <li>Portrait 5</li>
+            <audio src=".mp3" controls></audio>
+            <li>Portrait 6</li>
+            <audio src=".mp3" controls></audio>
+            <li>Portrait 7</li>
+            <audio src=".mp3" controls></audio>
+            <li>Portrait 8</li>
+            <audio src=".mp3" controls></audio>
+            <li>Portrait 9</li>
+            <audio src=".mp3" controls></audio>
+        </ul>
+        <p>Et de nombreuses personnes en coulissses: Josselin, Isabelle, Patrick, Virginie, Nicolas</p>
+    </div>
+
+    <footer>
+        <p><h2>EN SAVOIR PLUS</h2></p>
+        <!-- Attention ici : une div sert à englober des éléments : des paragraphes, des images etc. Ici, il manque les paragraphes :) -->
+        <div> En savoir plus sur la compagnie <img src="#" alt="logo de la compagnie"></div>
+        <div> En savoir plus sur le labo des cultures <img src="#" alt="logo du labo des cultures"></div>
+
+    </footer>
+</body>
+</html>

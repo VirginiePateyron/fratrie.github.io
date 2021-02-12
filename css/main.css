@@ -18,6 +18,7 @@ h3 {
 
 h2 {
     text-align: center;
+    margin: 10rem auto;
 }
 
 img,
@@ -71,6 +72,235 @@ video {
     grid-template-columns: repeat(5,1fr);
     grid-template-rows: repeat(3,1fr);
 }
+
+/* Modal */
+.button {
+    /* background: #128197; */
+    font: inherit;
+    border: 0;
+    color: #fff;
+    border-radius: .5em;
+    cursor: pointer;
+    padding: .25em .5em;
+    display: inline-block;
+  }
+
+  .invisible {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  .hidden { display: none; }
+  
+  /* removes scroll when modal is opened */
+.no-scroll {
+    overflow: hidden;
+
+    
+  background-color: #fff !important;
+  color: #fff;
+  }
+
+  /* l’overlay couvre tout */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 666;
+  }
+  /* modale */
+  .modal {
+    position: fixed;
+    left: 25%;
+    right: auto;
+    top: 15%;
+    width: 50%;
+    background: #fff;
+    z-index: 667;
+  }
+  
+  dialog {
+    display: block;
+    border: 0;
+  }
+  /* enlève le scroll de la page quand la modale est ouverte */
+  .no-scroll {
+    overflow: hidden;
+  }
+  /* l’overlay couvre tout */
+  .simple-modal-overlay,
+  .simple-animated-modal-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #fff;
+    opacity: .8;
+    z-index: 666;
+    cursor: pointer;
+  }
+  .simple-modal-overlay[data-background-click="disabled"],
+  .simple-animated-modal-overlay[data-background-click="disabled"] {
+    cursor: auto;
+  }
+  .simple-animated-modal-overlay  {
+    animation: fadewhite ease .5s 1 normal ;
+  }
+  
+  @keyframes fadewhite {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: .8;
+    }
+  }
+  /* modales */
+  .simple-modal,
+  .simple-animated-modal {
+    position: fixed;
+    left: 15%;
+    top: 5%;
+    width: 70%;
+    max-height: 98vh;
+    border: 2px solid #000; 
+    background: #fff;
+    z-index: 667;
+    padding: 2em;
+    right: auto;
+    overflow: auto;
+
+    -webkit-animation: pop ease .5s 1 normal ;
+    animation: pop ease .5s 1 normal ;
+  }
+
+  
+  @-webkit-keyframes pop {
+    0% {
+      opacity: 0;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        -webkit-transform: scale(0);
+                transform: scale(0);
+    }
+    100% {
+      opacity: 1;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+      -webkit-transform: scale(1);
+              transform: scale(1);
+        max-height: 100%;
+       /*  width: 50%;
+        left: 50%; */
+    }
+  }
+  @keyframes pop {
+    0% {
+      opacity: 0;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        -webkit-transform: scale(0);
+                transform: scale(0);
+    }
+    100% {
+      opacity: 1;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+      -webkit-transform: scale(1);
+              transform: scale(1);
+        max-height: 100%;
+      /*   width: 50%;
+        left: 50%; */
+    }
+  }
+  
+  .simple-modal-close,
+  .simple-animated-modal-close {
+    float: right;
+    background: #128197;
+    border-radius: 1em;
+    color: #fff;
+    border: 0;
+    font: inherit;
+    padding: .25em .5em;
+    cursor: pointer;
+  }
+  .simple-modal-close:focus,
+  .simple-modal-close:hover,
+  .simple-modal-close:active {
+    outline: 1px dotted #fff;  
+  }
+  .simple-modal-close:hover,
+  .simple-modal-close:active {
+    background: #4d287f;
+  }
+
+  
+  /* ça peut être adapté facilement avec des media-queries pour tablettes/mobiles */
+  
+  /* pour cet exemple : tablettes */
+  @media (max-width: 55.625em) {
+  
+    .simple-modal,
+    .simple-animated-modal {
+      left: 5%;
+      top: 5%;
+      height: 90%;
+      width: 90%;
+    }
+    
+  }
+  
+  /* pour cet exemple : mobile */
+  @media (max-width: 44.375em) {
+  
+    .simple-modal,
+    .simple-animated-modal {
+      left: 1%;
+      top: 1%;
+      width: 98%;
+      height: 98%;
+    }
+  
+  }
+  
+  /* it can be easily adapted in media-queries for tablets/mobile */
+  
+  /* for this example: tablets */
+  @media (max-width: 55.625em) {
+  
+    .simple-modal,
+    .simple-animated-modal {
+      left: 5%;
+      top: 5%;
+      height: 90%;
+      width: 90%;
+    }
+    
+  }
+  
+  /* for this example: mobile */
+  @media (max-width: 44.375em) {
+  
+    .simple-modal,
+    .simple-animated-modal {
+      left: 1%;
+      top: 1%;
+      width: 98%;
+      height: 98%;
+    }
+  
+  }
+
+
+
+
+  
 
 .third-content-element {
     display: grid;

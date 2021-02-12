@@ -1,28 +1,29 @@
 
+html,
 body {
-    font-family: 'bookos';
+  height: 100%;
+  margin: 0;
+}
+
+body {
+    font-family: 'Crimson Text', serif;
     margin: auto;
     line-height: 1.8;
     font-size: 1.6rem;
     height: 100%;
 
-    background-image: url("assets/img/paperboard-yellow-texture.jpg");
-    background-position: 100% 100%;
+  
 }
 
-h1,
-h2,
-h3 {
-    font-family: 'Josefin Slab', serif;
+.container {
+    width: 80%;
+    margin: auto;
 }
 
 h1 {
     padding-left: 16rem;
+   
 }
-
-/* .h1-subtitle {
-    padding-left: 16rem;
-} */
 
 h2 {
     text-align: center;
@@ -31,11 +32,28 @@ h2 {
 }
 
 h2:before {
-    content: url( 'assets/img/4.equipe/biblifratrie/tourbillon2.png');
-    width: 20rem;
+    content: url( '/assets/img/4.equipe/biblifratrie/tourbillon2.png');
+    width: 2rem;
     height: auto;
 
     position: absolute;
+}
+
+h2:after {
+    content: url( '/assets/img/4.equipe/biblifratrie/tourbillon.png');
+    width: 2rem;
+    height: auto;
+
+    position: absolute;
+}
+
+.first-content,
+.second-content,
+.third-content,
+.fourth-content,
+.fifth-content,
+.sixth-content {
+    padding-bottom: 10rem;
 }
 
 img,
@@ -45,59 +63,13 @@ video {
     justify-content: center;
     margin: auto;
 }
-/* 
-.container {
-    width: 80%;
-    margin: auto;
-} */
 
 
-/* .nav-primary {
-    overflow: hidden;
-    
-    position: fixed;
-    top: 10%;
-    width: 100%;
-
-    background-color: #fff;
-    border-bottom: .2px solid grey;
-
-    z-index: 1;
-} */
-
-/* .nav-primary a {
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-
-.header .nav-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.header .nav-primary.fixed {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-  }
-  .header .nav-primary.fixed + #content {
-    margin-top: 80px;
-  } */
-
-  html,
-body {
-  height: 100%;
-  margin: 0;
-}
 #GrandeIntro {
-  height: 10rem;
+  height: 15rem;
   align-content: center;
   display: flex;
+  background-color: #fff;
 }
 
 #headerTop {
@@ -110,13 +82,15 @@ body {
 }
 #siteWrapper header {
   height: 80px;
-  background: #000;
+  background: #fff;
+  border-bottom: .5px solid rgb(197, 197, 197);
 }
 #siteWrapper header.fixed {
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
+  z-index: 1;
 }
 
 .nav-content {
@@ -133,27 +107,18 @@ body {
 #siteWrapper header.fixed + #content {
   margin-top: 50px;
 }
-/* #content div {
-  width: 80%;
-  height: 1500px;
-  margin: auto;
-  border: solid;
-} */
-
-
-
-
-
-
-
-
-.main-container {
-    padding: 16px;
-    margin-top: 10rem;
-}
 
 .first-content .credits {
     text-align: right;
+}
+
+.first-content,
+.third-content,
+.sixth-content {
+    background: url("/assets/img/paperboard-yellow-texture.jpg") center center;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 90%);
+    padding-top: 2rem;
+    padding-bottom: 20rem;
 }
 
 .first-content-element {
@@ -430,8 +395,8 @@ body {
 }
     
 .third-content-element-card {
-    width: 16vw;
-    height: 16vw;
+    width: 16rem;
+    height: 16rem;
     border-radius: 50%;
     perspective: 100vw;
     perspective-origin: 50% 50%;
@@ -461,7 +426,8 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.3);
     
     padding: 5rem;
-    align-items: center;  
+    align-items: center; 
+    border-radius: 50%; 
     }
     .third-content-element-card .front {
 
@@ -603,6 +569,10 @@ body {
 
     max-width: 20rem;
     margin: 4rem auto;
+}
+
+.fourth-content-element-item {
+    background-color: #fff;
 
 }
 

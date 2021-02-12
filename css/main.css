@@ -1,13 +1,13 @@
-@font-face
-
-
 
 body {
-    font-family: arial;
+    font-family: 'bookos';
     margin: auto;
-    text-align: center;
     line-height: 1.8;
     font-size: 1.6rem;
+    height: 100%;
+
+    background-image: url("assets/img/paperboard-yellow-texture.jpg");
+    background-position: 100% 100%;
 }
 
 h1,
@@ -16,9 +16,26 @@ h3 {
     font-family: 'Josefin Slab', serif;
 }
 
+h1 {
+    padding-left: 16rem;
+}
+
+/* .h1-subtitle {
+    padding-left: 16rem;
+} */
+
 h2 {
     text-align: center;
     margin: 10rem auto;
+    position: relative;
+}
+
+h2:before {
+    content: url( 'assets/img/4.equipe/biblifratrie/tourbillon2.png');
+    width: 20rem;
+    height: auto;
+
+    position: absolute;
 }
 
 img,
@@ -28,16 +45,14 @@ video {
     justify-content: center;
     margin: auto;
 }
-
-
-
+/* 
 .container {
     width: 80%;
     margin: auto;
-}
+} */
 
 
-.nav-primary {
+/* .nav-primary {
     overflow: hidden;
     
     position: fixed;
@@ -47,10 +62,10 @@ video {
     background-color: #fff;
     border-bottom: .2px solid grey;
 
-    z-index: 1000;
-}
+    z-index: 1;
+} */
 
-.nav-primary a {
+/* .nav-primary a {
     display: block;
     text-align: center;
     padding: 14px 16px;
@@ -63,6 +78,74 @@ video {
     flex-direction: row;
     justify-content: space-evenly;
 }
+
+.header .nav-primary.fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  .header .nav-primary.fixed + #content {
+    margin-top: 80px;
+  } */
+
+  html,
+body {
+  height: 100%;
+  margin: 0;
+}
+#GrandeIntro {
+  height: 10rem;
+  align-content: center;
+  display: flex;
+}
+
+#headerTop {
+  padding-top: 1rem;
+  width: 80%;
+  margin: auto;
+}
+#siteWrapper {
+  margin-top: -80px;
+}
+#siteWrapper header {
+  height: 80px;
+  background: #000;
+}
+#siteWrapper header.fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto;
+}
+.nav-content li {
+    list-style: none;
+  text-decoration: none;
+  color: #fff;
+}
+
+#siteWrapper header.fixed + #content {
+  margin-top: 50px;
+}
+/* #content div {
+  width: 80%;
+  height: 1500px;
+  margin: auto;
+  border: solid;
+} */
+
+
+
+
+
+
+
 
 .main-container {
     padding: 16px;
@@ -88,9 +171,23 @@ video {
     text-align: center;
 }
 
+.first-content-element-item-text {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 8rem;
+}
+
 .first-content-element-img img {
     width: 16rem;
     height: 16rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.first-content-element-item-img {
+    width: 32rem;
+    height: 32rem;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -199,7 +296,7 @@ video {
     z-index: 667;
     padding: 2em;
     right: auto;
-    overflow: auto;
+   /*  overflow: auto; */
 
     -webkit-animation: pop ease .5s 1 normal ;
     animation: pop ease .5s 1 normal ;
@@ -346,6 +443,9 @@ video {
   
     padding: 5rem;
     margin: 2rem;
+
+    display: flex;
+    justify-content: center;
     }
     
     .third-content-element-card .face {

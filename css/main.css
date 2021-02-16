@@ -20,11 +20,6 @@ body {
     margin: auto;
 }
 
-h1 {
-    padding-left: 16rem;
-   
-}
-
 h2 {
     text-align: center;
     margin: 10rem auto;
@@ -32,7 +27,7 @@ h2 {
 }
 
 h2:before {
-    content: url( '/assets/img/4.equipe/biblifratrie/tourbillon2.png');
+    content: url( '/assets/img/4.equipe/biblifratrie/');
     width: 2rem;
     height: auto;
 
@@ -70,11 +65,14 @@ video {
   align-content: center;
   display: flex;
   background-color: #fff;
+  width: 60%;
+  margin: auto;
+  padding-top: 2rem;
 }
 
 #headerTop {
   padding-top: 1rem;
-  width: 80%;
+  width: 60%;
   margin: auto;
 }
 #siteWrapper {

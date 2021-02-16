@@ -1,23 +1,54 @@
-@font-face
 
-
-
+html,
 body {
-    font-family: arial;
-    margin: auto;
-    text-align: center;
-    line-height: 1.8;
-    font-size: 1.6rem;
+  height: 100%;
+  margin: 0;
 }
 
-h1,
-h2,
-h3 {
-    font-family: 'Josefin Slab', serif;
+body {
+    font-family: 'Crimson Text', serif;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 1.6rem;
+    height: 100%;
+
+  
+}
+
+.container {
+    width: 80%;
+    margin: auto;
 }
 
 h2 {
     text-align: center;
+    margin: 10rem auto;
+    position: relative;
+}
+
+h2:before {
+    content: url( '/assets/img/4.equipe/biblifratrie/');
+    width: 2rem;
+    height: auto;
+
+    position: absolute;
+}
+
+h2:after {
+    content: url( '/assets/img/4.equipe/biblifratrie/tourbillon.png');
+    width: 2rem;
+    height: auto;
+
+    position: absolute;
+}
+
+.first-content,
+.second-content,
+.third-content,
+.fourth-content,
+.fifth-content,
+.sixth-content {
+    padding-bottom: 10rem;
 }
 
 img,
@@ -29,57 +60,524 @@ video {
 }
 
 
-
-.container {
-    width: 80%;
-    margin: auto;
+#GrandeIntro {
+  height: 15rem;
+  align-content: center;
+  display: flex;
+  background-color: #fff;
+  width: 60%;
+  margin: auto;
+  padding-top: 2rem;
 }
 
-
-.nav-primary {
-    overflow: hidden;
-    
-    position: fixed;
-    top: 10%;
-    width: 100%;
-
-    background-color: #fff;
-    border-bottom: .2px solid grey
+#headerTop {
+  padding-top: 1rem;
+  width: 60%;
+  margin: auto;
+}
+#siteWrapper {
+  margin-top: -80px;
+}
+#siteWrapper header {
+  height: 80px;
+  background: #fff;
+  border-bottom: .5px solid rgb(197, 197, 197);
+}
+#siteWrapper header.fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
-.nav-primary a {
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-
-.header .nav-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto;
+}
+.nav-content li {
+    list-style: none;
+  text-decoration: none;
+  color: #fff;
 }
 
-.main-container {
-    padding: 16px;
-    margin-top: 10rem;
+#siteWrapper header.fixed + #content {
+  margin-top: 50px;
+}
+
+.first-content .credits {
+    text-align: right;
+}
+
+.first-content,
+.third-content,
+.sixth-content {
+    background: url("/assets/img/paperboard-yellow-texture.jpg") center center;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 90%);
+    padding-top: 2rem;
+    padding-bottom: 20rem;
 }
 
 .first-content-element {
     display: grid;
     grid-template-columns: repeat(5,1fr);
     grid-template-rows: repeat(3,1fr);
+    align-items: center;
 }
+
+.first-content-element-items {
+    margin: 4rem auto;
+}
+
+.first-content-element-item {
+    text-align: center;
+}
+
+.first-content-element-item-text {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 8rem;
+}
+
+.first-content-element-img img {
+    width: 16rem;
+    height: 16rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.first-content-element-item-img {
+    width: 32rem;
+    height: 32rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Modal */
+.button {
+    /* background: #128197; */
+    font: inherit;
+    border: 0;
+    color: #fff;
+    border-radius: .5em;
+    cursor: pointer;
+    padding: .25em .5em;
+    display: inline-block;
+  }
+
+  .invisible {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  .hidden { display: none; }
+  
+  /* removes scroll when modal is opened */
+.no-scroll {
+    overflow: hidden;
+
+    
+  background-color: #fff !important;
+  color: #fff;
+  }
+
+  /* l’overlay couvre tout */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 666;
+  }
+  /* modale */
+  .modal {
+    position: fixed;
+    left: 25%;
+    right: auto;
+    top: 15%;
+    width: 50%;
+    background: #fff;
+    z-index: 667;
+  }
+  
+  dialog {
+    display: block;
+    border: 0;
+  }
+  /* enlève le scroll de la page quand la modale est ouverte */
+  .no-scroll {
+    overflow: hidden;
+  }
+  /* l’overlay couvre tout */
+  .simple-modal-overlay,
+  .simple-animated-modal-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #fff;
+    opacity: .8;
+    z-index: 666;
+    cursor: pointer;
+  }
+  .simple-modal-overlay[data-background-click="disabled"],
+  .simple-animated-modal-overlay[data-background-click="disabled"] {
+    cursor: auto;
+  }
+  .simple-animated-modal-overlay  {
+    animation: fadewhite ease .5s 1 normal ;
+  }
+  
+  @keyframes fadewhite {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: .8;
+    }
+  }
+  /* modales */
+  .simple-modal,
+  .simple-animated-modal {
+    position: fixed;
+    left: 15%;
+    top: 5%;
+    width: 70%;
+    max-height: 98vh;
+    border: 2px solid #000; 
+    background: #fff;
+    z-index: 667;
+    padding: 2em;
+    right: auto;
+   /*  overflow: auto; */
+
+    -webkit-animation: pop ease .5s 1 normal ;
+    animation: pop ease .5s 1 normal ;
+  }
+
+  
+  @-webkit-keyframes pop {
+    0% {
+      opacity: 0;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        -webkit-transform: scale(0);
+                transform: scale(0);
+    }
+    100% {
+      opacity: 1;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+      -webkit-transform: scale(1);
+              transform: scale(1);
+        max-height: 100%;
+       /*  width: 50%;
+        left: 50%; */
+    }
+  }
+  @keyframes pop {
+    0% {
+      opacity: 0;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        -webkit-transform: scale(0);
+                transform: scale(0);
+    }
+    100% {
+      opacity: 1;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+      -webkit-transform: scale(1);
+              transform: scale(1);
+        max-height: 100%;
+      /*   width: 50%;
+        left: 50%; */
+    }
+  }
+  
+  .simple-modal-close,
+  .simple-animated-modal-close {
+    float: right;
+    background: #128197;
+    border-radius: 1em;
+    color: #fff;
+    border: 0;
+    font: inherit;
+    padding: .25em .5em;
+    cursor: pointer;
+  }
+  .simple-modal-close:focus,
+  .simple-modal-close:hover,
+  .simple-modal-close:active {
+    outline: 1px dotted #fff;  
+  }
+  .simple-modal-close:hover,
+  .simple-modal-close:active {
+    background: #4d287f;
+  }
+
+  
+  /* ça peut être adapté facilement avec des media-queries pour tablettes/mobiles */
+  
+  /* pour cet exemple : tablettes */
+  @media (max-width: 55.625em) {
+  
+    .simple-modal,
+    .simple-animated-modal {
+      left: 5%;
+      top: 5%;
+      height: 90%;
+      width: 90%;
+    }
+    
+  }
+  
+  /* pour cet exemple : mobile */
+  @media (max-width: 44.375em) {
+  
+    .simple-modal,
+    .simple-animated-modal {
+      left: 1%;
+      top: 1%;
+      width: 98%;
+      height: 98%;
+    }
+  
+  }
+  
+  /* it can be easily adapted in media-queries for tablets/mobile */
+  
+  /* for this example: tablets */
+  @media (max-width: 55.625em) {
+  
+    .simple-modal,
+    .simple-animated-modal {
+      left: 5%;
+      top: 5%;
+      height: 90%;
+      width: 90%;
+    }
+    
+  }
+  
+  /* for this example: mobile */
+  @media (max-width: 44.375em) {
+  
+    .simple-modal,
+    .simple-animated-modal {
+      left: 1%;
+      top: 1%;
+      width: 98%;
+      height: 98%;
+    }
+  
+  }
+
+  .second-content .fullwidthVideo {
+      width: 100%;
+      height: auto;
+  }
+
+
+  
 
 .third-content-element {
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }
+    
+.third-content-element-card {
+    width: 16rem;
+    height: 16rem;
+    border-radius: 50%;
+    perspective: 100vw;
+    perspective-origin: 50% 50%;
+    transform-style: preserve-3d;
+    position: relative;
+    font-size:1.8rem;
+    
+    justify-self: center;
+  
+    padding: 5rem;
+    margin: 2rem;
+
+    display: flex;
+    justify-content: center;
+    }
+    
+    .third-content-element-card .face {
+    backface-visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.35s cubic-bezier(0.13, 1.03, 0.39, 0.98), box-shadow 0.35s cubic-bezier(0.13, 1.03, 0.39, 0.98), border-width 0.35s cubic-bezier(0.13, 1.03, 0.39, 0.98);
+    box-shadow: 0px 1.2vw 4vw -1vw rgba(0, 0, 0, 0.6);
+    background-position: 0 0;
+    background-size: 21vw;
+    background-repeat: no-repeat;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    
+    padding: 5rem;
+    align-items: center; 
+    border-radius: 50%; 
+    }
+    .third-content-element-card .front {
+
+    transform: rotateX(0deg);
+    border: 2px solid #fff;
+      display: grid;
+    grid-template-rows: repeat(4,1fr);
+    text-align: center;
+    justify-content: start;
+    align-items: center;
+  
+    overflow: hidden;
+  
+    }
+  
+    .third-content-element-card .back {
+    transform: rotateX(180deg);
+    background-color: #0B042C;
+    color: #fff;
+    font-weight: 600;
+  
+    overflow-y: auto;
+    margin-bottom: 2rem;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: start !important;
+    
+    }
+    .third-content-element-card .back p {
+      position: relative;
+    }
+    .third-content-element-card .back img {
+    width: 5rem;
+    object-fit: contain;
+    position: absolute;
+    bottom: 5rem;
+    right: 5rem;
+  }
+  
+    .third-content-element-card:hover .front, .third-content-element-card.hover .front {
+    transform: rotateX(20deg);
+    box-shadow: 0px 10vw 9vw -6vw rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    border-top: 1px solid rgba(0, 0, 0, 0.8);
+    }
+    .third-content-element-card:hover .back, .third-content-element-card.hover .back {
+    transform: rotateX(200deg);
+    box-shadow: 0px -2vw 4vw -2vw rgba(35, 2, 2, 0.68), inset 0px -8vw 12vw -5vw rgba(0, 0, 0, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(5, 5, 5, 0.8);
+    
+    justify-content: start;
+    }
+    .third-content-element-card.flipped .front {
+    transform: rotateX(180deg);
+    }
+    .third-content-element-card.flipped .back {
+    transform: rotateX(360deg);
+    }
+    .third-content-element-card.flipped:hover .front, .third-content-element-card.flipped.hover .front {
+    transform: rotateX(200deg);
+    }
+    .third-content-element-card.flipped:hover .back, .third-content-element-card.flipped.hover .back {
+    transform: rotateX(360deg);
+    }
+    
+    .third-content-element-card .front-title {
+      border: 1px solid #fff;
+      width: 100%;
+      padding: 2rem;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .third-content-element-card button {
+      background: none;
+      border: 0;
+      box-sizing: border-box;
+      margin: 1em;
+     
+      color: #32b3e6;
+      font-size: inherit;
+      font-weight: 700;
+      position: relative;
+      vertical-align: middle;
+    
+      margin-bottom: 5rem;
+    }
+    .third-content-element-card button::before, button::after {
+      box-sizing: inherit;
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+.third-content-element-card:nth-child(1) .front {
+    background-color: #B800F0;
+}
+
+.third-content-element-card:nth-child(2) .front {
+    background-color: #24FFBF;
+}
+
+.third-content-element-card:nth-child(3) .front {
+    background-color: #F01900;
+}
+
+.third-content-element-card:nth-child(4) .front {
+    background-color: #0019E5;
+}
+
+.third-content-element-card:nth-child(5) .front {
+    background-color: #B20000;
+}
+
+.third-content-element-card:nth-child(6) .front {
+    background-color: #070916;
+}
+
+.third-content-element-card:nth-child(7) .front {
+    background-color: #F0BD00;
+}
+
+
 
 .fourth-content-element {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
+}
+
+.fourth-content-element-item,
+.fourth-content-element-item figure {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    max-width: 20rem;
+    margin: 4rem auto;
+}
+
+.fourth-content-element-item {
+    background-color: #fff;
+
+}
+
+.fifth-content-element {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 

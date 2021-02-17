@@ -19,3 +19,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   
   addEventListener("scroll", scrolled, false);
+
+  
+/* Lancer l'audio au clic sur le bouton */

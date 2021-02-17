@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet"> 
+
    
 </head>
 
@@ -22,11 +23,10 @@
     <header class="header">
         <div id="headerTop"><p class="h1-subtitle">De l'autre côté...</p>
           <ul class="nav-content">
-            <li><a href="#first">de la création</a></li>
+            <li><a href="#first" aria-current="page">de la création</a></li>
             <li><a href="#second">des coulisses</a></li>
             <li><a href="#third">des trésors</a></li>
             <li><a href="#four">des visages & des voix</a></li>
-            <li><a href="#five">contact</a></li>
           </ul>
           </div>
       </header>
@@ -90,6 +90,35 @@
 
                     <li class="first-content-element-items">
                         <div class="first-content-element-item js-modal" data-modal-prefix-class="simple"
+                        data-modal-content-id="modal6" data-modal-title="La répétition"
+                        data-modal-close-text="Fermer" data-modal-close-title="Close it, really">
+                            <div class="first-content-element-img" >
+                                <img src="assets/img/1.creation/repetition_small.jpg" alt="" class="button">
+                            </div>
+                            <p>La répétition</p>
+                        </div>
+
+                        <div class="hidden first-content-element-modal" id="modal6">
+                            <div class="first-content-element-item-text ">
+                                <img class ="first-content-element-item-img"
+                                src="assets/img/1.creation/repetition_small.jpg" alt="">
+                                <p>On ne monte pas sur scène sans avoir répété avant ! Les comédiens jouent
+                                    et rejouent de longues heures avant la représentation pour apprendre leur texte, pour s’imprégner de
+                                    l’espace et pour comprendre leur personnage. C’est le rôle de la metteuse en scène de diriger les
+                                    comédiens. C’est elle qui choisit où ils vont se placer sur scène ou encore quelles intonations ils doivent
+                                    prendre. Lorsque tu verras la représentation, tu n’y verras que du feu…</p>
+                            </div>
+                        </div>
+                    </li> 
+
+                    <li>
+                        <div class="first-content-element-img-item">
+                            <img src="assets/img/1.creation/arrow3.png" alt="">
+                        </div>
+                    </li>
+
+                    <li class="first-content-element-items">
+                        <div class="first-content-element-item js-modal" data-modal-prefix-class="simple"
                         data-modal-content-id="modal2" data-modal-title="Le décor"
                         data-modal-close-text="Fermer" data-modal-close-title="Close it, really">
                             <div class="first-content-element-img" >
@@ -105,32 +134,6 @@
                                     imagine et conçoit l’ensemble des décors. Il y des grands décors que tu trouveras facilement car ils
                                     prennent beaucoup d’espace mais il y a aussi les petits décors avec tous les objets que tu trouveras sur
                                     scène et qu’utilisent les comédiens.</p>
-                            </div>
-                        </div>
-                    </li> 
-
-                    <li>
-                        <div class="first-content-element-img-item">
-                            <img src="assets/img/1.creation/arrow3.png" alt="">
-                        </div>
-                    </li>
-
-                    <li class="first-content-element-items">
-                        <div class="first-content-element-item js-modal" data-modal-prefix-class="simple"
-                        data-modal-content-id="modal4" data-modal-title="Les lumières"
-                        data-modal-close-text="Fermer" data-modal-close-title="Close it, really">
-                            <div class="first-content-element-img" >
-                                <img src="assets/img/1.creation/lumiere_small.jpg" alt="" class="button">
-                            </div>
-                            <p>Les lumières</p>
-                        </div>
-
-                        <div class="hidden first-content-element-modal" id="modal4">
-                            <div class="first-content-element-item-text">
-                                <img class=" first-content-element-item-img" src="assets/img/1.creation/lumiere_small.jpg" alt="">
-                                <p>Quand le rideau se lève, la salle est plongée dans le noir et les projecteurs se
-                                    braquent sur la scène et suivent les va-et-vient des comédiens ! Durant tout le spectacle, une véritable valse
-                                    des lumières se jouent et te permet de ne pas perdre une miette de la représentation.</p>
                             </div>
                         </div>
                     </li> 
@@ -196,23 +199,20 @@
 
                     <li class="first-content-element-items">
                         <div class="first-content-element-item js-modal" data-modal-prefix-class="simple"
-                        data-modal-content-id="modal6" data-modal-title="La répétition"
+                        data-modal-content-id="modal4" data-modal-title="Les lumières"
                         data-modal-close-text="Fermer" data-modal-close-title="Close it, really">
                             <div class="first-content-element-img" >
-                                <img src="assets/img/1.creation/repetition_small.jpg" alt="" class="button">
+                                <img src="assets/img/1.creation/lumiere_small.jpg" alt="" class="button">
                             </div>
-                            <p>La répétition</p>
+                            <p>Les lumières</p>
                         </div>
 
-                        <div class="hidden first-content-element-modal" id="modal6">
-                            <div class="first-content-element-item-text ">
-                                <img class ="first-content-element-item-img"
-                                src="assets/img/1.creation/repetition_small.jpg" alt="">
-                                <p>On ne monte pas sur scène sans avoir répété avant ! Les comédiens jouent
-                                    et rejouent de longues heures avant la représentation pour apprendre leur texte, pour s’imprégner de
-                                    l’espace et pour comprendre leur personnage. C’est le rôle de la metteuse en scène de diriger les
-                                    comédiens. C’est elle qui choisit où ils vont se placer sur scène ou encore quelles intonations ils doivent
-                                    prendre. Lorsque tu verras la représentation, tu n’y verras que du feu…</p>
+                        <div class="hidden first-content-element-modal" id="modal4">
+                            <div class="first-content-element-item-text">
+                                <img class=" first-content-element-item-img" src="assets/img/1.creation/lumiere_small.jpg" alt="">
+                                <p>Quand le rideau se lève, la salle est plongée dans le noir et les projecteurs se
+                                    braquent sur la scène et suivent les va-et-vient des comédiens ! Durant tout le spectacle, une véritable valse
+                                    des lumières se jouent et te permet de ne pas perdre une miette de la représentation.</p>
                             </div>
                         </div>
                     </li> 
@@ -270,7 +270,7 @@
                                     
                                 </button>
                                 <div class="back face">
-                                <p id="phrase"> </p>
+                                <p id="phrase"><audio controls src="assets/medias/tresors/1 - Pierre joue dans sa chambre.mp3"></audio> </p>
                                
                                 </div>
                             </div>
@@ -310,7 +310,7 @@
                                     
                                 </button>
                                 <div class="back face">
-                                <p id="phrase"> </p>
+                                <p id="phrase"> <img src="assets/img/3.tresor/4.boiteTresor_small.jpg" alt=""></p>
                                
                                 </div>
                             </div>
@@ -320,7 +320,7 @@
                                     
                                 </button>
                                 <div class="back face">
-                                <p id="phrase"> </p>
+                                <p id="phrase">OGDOG. — Quand la pluie touche le sol, pile, elle se transforme en billes.<br>PIERRE. — Non, en flaques.<br>OGDOG. — Non, en billes!<br>PIERRE. — Pourquoi je l’ai jamais vu, alors?<br>OGDOG. — Parce qu’elles s’éparpillent très très vite. Viens! </p>
                                
                                 </div>
                             </div>
@@ -344,12 +344,15 @@
                 <div class="container">
                     <h2>De l'autre côté... des visages et des voix</h2>
                     <p class="h2-subtitle"></p>
+                    
+
                     <ul class="fourth-content-element">
+                       
                         <li class="fourth-content-element-item">
                             <img src="assets/img/4.equipe/nb-bg/Adeline_small.jpg" alt="">
-                            <p class="fourth-content-element-name">Adeline</p>
+                            <h3 class="fourth-content-element-name">Adeline</h3>
                             <figure>
-                                <figcaption>Est-ce que tu as peur du noir ?</figcaption>
+                                <figcaption>Est-ce que tu as peur du noir &nbsp;?</figcaption>
                                 <audio controls src="assets/medias/equipe/adeline.mp3">
                                     Your browser does not support the
                                     <code>audio</code> element.
@@ -358,20 +361,21 @@
                         </li>
                         <li class="fourth-content-element-item">
                             <img src="assets/img/4.equipe/nb-bg/camille_small.jpg" alt="">
-                            <p class="fourth-content-element-name">Camille</p>
+                            <h3 class="fourth-content-element-name">Camille</h3>
                             <figure>
-                                <figcaption>Comment conserves-tu tes souvenirs ?</figcaption>
+                                <figcaption>Comment conserves-tu tes souvenirs&nbsp;?</figcaption>
                                 <audio controls src="assets/medias/equipe/camille.mp3">
                                     Your browser does not support the
                                     <code>audio</code> element.
                                 </audio>
                             </figure>
                         </li>
+
                         <li class="fourth-content-element-item">
                             <img src="assets/img/4.equipe/nb-bg/christine_small.jpg" alt="">
-                            <p class="fourth-content-element-name">Christine</p>
+                            <h3 class="fourth-content-element-name">Christine</h3>
                             <figure>
-                                <figcaption>Comment as-tu pensé les décors du spectacle ?</figcaption>
+                                <figcaption>Comment as-tu pensé les décors du spectacle&nbsp;?</figcaption>
                                 <audio controls src="assets/medias/equipe/christine.mp3">
                                     Your browser does not support the
                                     <code>audio</code> element.
@@ -380,9 +384,9 @@
                         </li>
                         <li class="fourth-content-element-item">
                             <img src="assets/img/4.equipe/nb-bg/emilie_small.jpg" alt="">
-                            <p class="fourth-content-element-name">Emilie</p>
+                            <h3 class="fourth-content-element-name">Emilie</h3>
                             <figure>
-                                <figcaption>As-tu souvent été en forêt ?</figcaption>
+                                <figcaption>As-tu souvent été en forêt&nbsp;?</figcaption>
                                 <audio controls src="assets/medias/equipe/emilie.mp3">
                                     Your browser does not support the
                                     <code>audio</code> element.
@@ -391,10 +395,10 @@
                         </li>
                         <li class="fourth-content-element-item">
                             <img src="assets/img/4.equipe/nb-bg/Julie_small.jpg" alt="">
-                            <p class="fourth-content-element-name">Julie</p>
+                            <h3 class="fourth-content-element-name">Julie</h3>
                             <figure>
                                 <figcaption>
-                                    Crois-tu aux pouvoirs magiques ?</figcaption>
+                                    Crois-tu aux pouvoirs magiques&nbsp;?</figcaption>
                                 <audio controls src="assets/medias/equipe/julie.mp3">
                                     Your browser does not support the
                                     <code>audio</code> element.
@@ -403,9 +407,9 @@
                         </li>
                         <li class="fourth-content-element-item">
                             <img src="assets/img/4.equipe/nb-bg/lucas_small.jpg" alt="">
-                            <p class="fourth-content-element-name">Lucas</p>
+                            <h3 class="fourth-content-element-name">Lucas</h3>
                             <figure>
-                                <figcaption>Est-ce que tu pensais avoir un super-pouvoir ?</figcaption>
+                                <figcaption>Est-ce que tu pensais avoir un super-pouvoir&nbsp;?</figcaption>
                                 <audio controls src="assets/medias/equipe/lucas.mp3">
                                     Your browser does not support the
                                     <code>audio</code> element.
@@ -414,9 +418,9 @@
                         </li>
                         <li class="fourth-content-element-item">
                             <img src="assets/img/4.equipe/nb-bg/KarinToriNB_small.jpg" alt="">
-                            <p class="fourth-content-element-name">Karine</p>
+                            <h3 class="fourth-content-element-name">Karine</h3>
                             <figure>
-                                <figcaption>Pourquoi écrire est un super-pouvoir ?</figcaption>
+                                <figcaption>Pourquoi écrire est un super-pouvoir&nbsp;?</figcaption>
                                 <audio controls src="assets/medias/equipe/">
                                     Your browser does not support the
                                     <code>audio</code> element.
@@ -425,9 +429,9 @@
                         </li>
                         <li class="fourth-content-element-item">
                             <img src="assets/img/4.equipe/nb-bg/marc_small.jpg" alt="">
-                            <p class="fourth-content-element-name">Marc</p>
+                            <h3 class="fourth-content-element-name">Marc</h3>
                             <figure>
-                                <figcaption>Comment as-tu composé les musiques du spectacle ?</figcaption>
+                                <figcaption>Comment as-tu composé les musiques du spectacle&nbsp;?</figcaption>
                                 <audio controls src="assets/medias/equipe/marc.mp3">
                                     Your browser does not support the
                                     <code>audio</code> element.
@@ -436,7 +440,7 @@
                         </li>
                         <li class="fourth-content-element-item">
                             <img src="assets/img/4.equipe/nb-bg/patrick_small.jpg" alt="">
-                            <p class="fourth-content-element-name">Patrick</p>
+                            <h3 class="fourth-content-element-name">Patrick</h3>
                             <figure>
                                 <figcaption>Quel est le rôle de la lumière dans un spectacle ?</figcaption>
                                 <audio controls src="assets/medias/equipe/marc.mp3">
@@ -469,20 +473,12 @@
                 </div>
             </section>
 
-            <section class="sixth-content" id="five">
-                <div class="container">
-                    <h2>Contact</h2>
-                    <p class="h2-subtitle"></p>
-                    <div class="form">
-
-                    </div>
-                </div>
-            </section>
         </article>
     </div>
 </div>
 <script src="js/script.js"></script>
     <script src="js/van11y-accessible-modal-window-aria.js"></script>
+
 
     <!-- Vous pouvez ajouter votre script Google Analytics ici -->
 </body>

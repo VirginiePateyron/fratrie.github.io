@@ -11,8 +11,6 @@ body {
     line-height: 1.8;
     font-size: 1.6rem;
     height: 100%;
-
-  
 }
 
 .container {
@@ -20,24 +18,38 @@ body {
     margin: auto;
 }
 
+h1 {
+  font-size: 3.2rem;
+}
+
+.h1-subtitle {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 h2 {
     text-align: center;
     margin: 10rem auto;
     position: relative;
+    font-size: 3.6rem;
 }
 
 h2:before {
-    content: url( '/assets/img/4.equipe/biblifratrie/');
-    width: 2rem;
+    /* content: url( '/assets/img/4.equipe/biblifratrie/feuille2nb.png'); */
+    width: ;
     height: auto;
 
     position: absolute;
+    top: 0%;
+    left: 0%;
 }
 
 h2:after {
-    content: url( '/assets/img/4.equipe/biblifratrie/tourbillon.png');
+  /*   content: url( '/assets/img/4.equipe/biblifratrie/feuille3.png'); */
     width: 2rem;
     height: auto;
+    top: 0;
+    right: 0;
 
     position: absolute;
 }
@@ -57,6 +69,7 @@ video {
     display: flex;
     justify-content: center;
     margin: auto;
+    
 }
 
 
@@ -65,14 +78,14 @@ video {
   align-content: center;
   display: flex;
   background-color: #fff;
-  width: 60%;
+  width: 80%;
   margin: auto;
   padding-top: 2rem;
 }
 
 #headerTop {
   padding-top: 1rem;
-  width: 60%;
+  width: 80%;
   margin: auto;
 }
 #siteWrapper {
@@ -93,14 +106,22 @@ video {
 
 .nav-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 1rem auto;
+  font-size: 2rem;
 }
-.nav-content li {
-    list-style: none;
+.nav-content li a {
+  list-style: none;
   text-decoration: none;
-  color: #fff;
+  padding-left: 0;
+  color: inherit;
 }
+
+.nav-content li a:hover {
+  color: #0019E5;
+}
+
+.current-menu-item
 
 #siteWrapper header.fixed + #content {
   margin-top: 50px;
@@ -113,10 +134,13 @@ video {
 .first-content,
 .third-content,
 .sixth-content {
-    background: url("/assets/img/paperboard-yellow-texture.jpg") center center;
+  /*   background: url("/assets/img/paperboard-yellow-texture.jpg") center center; */
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 90%);
     padding-top: 2rem;
     padding-bottom: 20rem;
+    /* background-color: #FBEBE2; */
+    background-color: #FAF2E8;
+  /*   background-color: #EDE4D1; */
 }
 
 .first-content-element {
@@ -250,9 +274,10 @@ video {
   .simple-modal,
   .simple-animated-modal {
     position: fixed;
-    left: 15%;
+    left: 25%;
+   /*  transform: translateX(-50%); */
     top: 5%;
-    width: 70%;
+    width: 50%;
     max-height: 98vh;
     border: 2px solid #000; 
     background: #fff;
@@ -390,6 +415,8 @@ video {
 .third-content-element {
     display: grid;
     grid-template-columns: repeat(3,1fr);
+
+    z-index: 1;
 }
     
 .third-content-element-card {
@@ -485,13 +512,30 @@ video {
     }
     .third-content-element-card.flipped .back {
     transform: rotateX(360deg);
+
+    width: 50rem;
+    height: 50rem;
     }
+
+    .third-content-element-card.flipped .back #phrase {
+      width: 30rem;
+      padding: 2rem;
+      margin: auto;
+      }
+
+      .third-content-element-card.flipped .back #phrase img {
+        object-fit: cover;
+      }
+
+
     .third-content-element-card.flipped:hover .front, .third-content-element-card.flipped.hover .front {
     transform: rotateX(200deg);
     }
     .third-content-element-card.flipped:hover .back, .third-content-element-card.flipped.hover .back {
     transform: rotateX(360deg);
     }
+
+
     
     .third-content-element-card .front-title {
       border: 1px solid #fff;
@@ -573,6 +617,9 @@ video {
     background-color: #fff;
 
 }
+
+
+
 
 .fifth-content-element {
     display: flex;

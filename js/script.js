@@ -11,7 +11,7 @@
   
   addEventListener("scroll", scrolled, false);
 
-  
+
 /* Créer une fonction qui retourne la carte au clic */
 const cards = ["card1", "card2", "card3", "card4", "card5", "card6", "card7"];
 cards.map((card) => { 
@@ -22,3 +22,6 @@ cards.map((card) => {
 });
   
 /* Lancer l'audio au clic sur le bouton */
+
+
+

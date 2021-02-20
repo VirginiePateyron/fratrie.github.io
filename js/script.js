@@ -1,12 +1,3 @@
-/* Créer une fonction qui retourne la carte au clic */
-document.addEventListener('DOMContentLoaded', function () {
-    [].forEach.call(document.querySelectorAll(".third-content-element-card"), function(card, i, cards){
-      card.addEventListener("click", function(e){
-        e.currentTarget.classList.toggle("flipped");
-      });
-    });
-  });
-
   /* Remonter la navbar au top du site */
 
   const header = document.querySelector("#siteWrapper .header");
@@ -20,5 +11,14 @@ document.addEventListener('DOMContentLoaded', function () {
   
   addEventListener("scroll", scrolled, false);
 
+  
+/* Créer une fonction qui retourne la carte au clic */
+const cards = ["card1", "card2", "card3", "card4", "card5", "card6", "card7"];
+cards.map((card) => { 
+  const cardArray = document.getElementById(card);
+  cardArray.addEventListener("click", function () {
+    cardArray.classList.toggle("is-flipped");
+  });
+});
   
 /* Lancer l'audio au clic sur le bouton */

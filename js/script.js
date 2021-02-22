@@ -13,7 +13,7 @@
 
 
 /* Créer une fonction qui retourne la carte au clic */
-const cards = ["card1", "card2", "card3", "card4", "card5", "card6", "card7"];
+const cards = ["card1", "card2", "card3", "card4", "card5", "card6", "card7", "card8"];
 cards.map((card) => { 
   const cardArray = document.getElementById(card);
   cardArray.addEventListener("click", function () {

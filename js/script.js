@@ -21,7 +21,7 @@ cards.map((card) => {
   });
 });
   
-/* Lancer l'audio au clic sur le bouton */
+/* Scroll smooth */
 
 
 

@@ -17,11 +17,13 @@
 </head>
 
 <body>
-<div id="GrandeIntro"><h1>La réplique</h1></div>
+<div class="divIntro">
+    <h1 id="GrandeIntro">La réplique</h1>
+</div>
 <div id="siteWrapper">
    
     <header class="header">
-        <div id="headerTop"><p class="h1-subtitle">De l'autre côté...</p>
+        <div id="headerTop"><a href="#first" aria-current="page"><p class="h1-subtitle">De l'autre côté...</p></a>
           <ul class="nav-content">
             <li><a href="#first" aria-current="page">de la création</a></li>
             <li><a href="#second">des coulisses</a></li>
@@ -33,218 +35,220 @@
 
     <div class="main-container" id="content">
         <article class="main wrapper">
-            <section class="first-content" id="first">
-                <div class="container">
-                <h2>De l'autre côté... de la création</h2>
-                <p class="h2-subtitle"></p>
+            <section id="first">
+                <div class="first-content">
+                    <div class="container">
+                        <h2>De l'autre côté... de la création</h2>
+                        <p class="h2-subtitle"></p>
 
-                <ul class="first-content-element js-modal">
-                    <li class="first-content-element-items">
-                        <div class="first-content-element-item js-modal" data-modal-prefix-class="simple"
-                        data-modal-content-id="modal" data-modal-title="Un projet"
-                        data-modal-close-text="Fermer" data-modal-close-title="Close it, really">
-                            <div class="first-content-element-img" >
-                                <img src="assets/img/1.creation/feuille2nb.png" alt="" class="button">
-                            </div>
-                            <p>Un projet</p>
-                        </div>
+                        <ul class="first-content-element js-modal">
+                            <li class="first-content-element-items">
+                                <div class="first-content-element-item js-modal" data-modal-prefix-class="simple"
+                                data-modal-content-id="modal" data-modal-title="Un projet"
+                                data-modal-close-text="Fermer" data-modal-close-title="Close it, really">
+                                    <div class="first-content-element-img" >
+                                        <img src="assets/img/1.creation/feuille2nb.png" alt="" class="button">
+                                    </div>
+                                    <p>Un projet</p>
+                                </div>
 
-                        <div class="hidden first-content-element-modal" id="modal">
-                            <div class="first-content-element-item-text ">
-                                <img class="first-content-element-item-img" src="assets/img/1.creation/feuille2nb.png" alt="">
-                                <p>On  eu  envie  de  parler  de  la  fratrie  qui  rassemble  les  frères  et  les  soeurs,  des liens qui se tissent et de toutes la aventures qui nous lient, réelles ou imaginaires. On a décidé d’en faire une pièce de théâtre pour que tu puisses découvrir un nouveau monde, sur scène, que tu puisses rigoler et être surpris.e. C’est pour ça qu’on a passé une commande auprès de l’autrice, Karin Serres.</p>
-                            </div>
-                        </div>
-                    </li>     
-                    <li>
-                        <div class="first-content-element-img-item">
-                            <img src="assets/img/1.creation/arrow1.png" alt="">
-                        </div>
-                    </li>
-                    
-                    <li class="first-content-element-items">
-                        <div class="first-content-element-item js-modal" data-modal-prefix-class="simple"
-                        data-modal-content-id="modal1" data-modal-title="L'écriture"
-                        data-modal-close-text="Fermer" data-modal-close-title="Close it, really">
-                            <div class="first-content-element-img" >
-                                <img src="assets/img/1.creation/1.ecriture_small.jpg" alt="" class="button">
-                            </div>
-                            <p>L'écriture</p>
-                        </div>
+                                <div class="hidden first-content-element-modal" id="modal">
+                                    <div class="first-content-element-item-text ">
+                                        <img class="first-content-element-item-img" src="assets/img/1.creation/feuille2nb.png" alt="">
+                                        <p>On  eu  envie  de  parler  de  la  fratrie  qui  rassemble  les  frères  et  les  soeurs,  des liens qui se tissent et de toutes la aventures qui nous lient, réelles ou imaginaires. On a décidé d’en faire une pièce de théâtre pour que tu puisses découvrir un nouveau monde, sur scène, que tu puisses rigoler et être surpris.e. C’est pour ça qu’on a passé une commande auprès de l’autrice, Karin Serres.</p>
+                                    </div>
+                                </div>
+                            </li>     
+                            <li>
+                                <div class="first-content-element-img-item">
+                                    <img src="assets/img/1.creation/arrow1.png" alt="">
+                                </div>
+                            </li>
+                            
+                            <li class="first-content-element-items">
+                                <div class="first-content-element-item js-modal" data-modal-prefix-class="simple"
+                                data-modal-content-id="modal1" data-modal-title="L'écriture"
+                                data-modal-close-text="Fermer" data-modal-close-title="Close it, really">
+                                    <div class="first-content-element-img" >
+                                        <img src="assets/img/1.creation/1.ecriture_small.jpg" alt="" class="button">
+                                    </div>
+                                    <p>L'écriture</p>
+                                </div>
 
-                        <div class="hidden first-content-element-modal" id="modal1">
-                            <div class="first-content-element-item-text ">
-                                <img class="first-content-element-item-img" src="assets/img/1.creation/1.ecriture_small.jpg" alt="">
-                                <p>Le métier de Karin Serres est d’écrire des histoires. C’est elle qui a écrit les
-                                    textes que récitent les comédiens. Comme on lui avait demandé d’imaginer une histoire autour de la fratrie,
-                                    elle a eu envie de parler de tes frrr et de tes srrr, ceux qui existent ou ceux que tu imagines.</p>
-                            </div>
-                        </div>
-                    </li> 
+                                <div class="hidden first-content-element-modal" id="modal1">
+                                    <div class="first-content-element-item-text ">
+                                        <img class="first-content-element-item-img" src="assets/img/1.creation/1.ecriture_small.jpg" alt="">
+                                        <p>Le métier de Karin Serres est d’écrire des histoires. C’est elle qui a écrit les
+                                            textes que récitent les comédiens. Comme on lui avait demandé d’imaginer une histoire autour de la fratrie,
+                                            elle a eu envie de parler de tes frrr et de tes srrr, ceux qui existent ou ceux que tu imagines.</p>
+                                    </div>
+                                </div>
+                            </li> 
 
-                    <li>
-                        <div class="first-content-element-img-item">
-                            <img src="assets/img/1.creation/arrow2.png" alt="">
-                        </div>
-                    </li>
+                            <li>
+                                <div class="first-content-element-img-item">
+                                    <img src="assets/img/1.creation/arrow2.png" alt="">
+                                </div>
+                            </li>
 
-                    <li class="first-content-element-items">
-                        <div class="first-content-element-item js-modal" data-modal-prefix-class="simple"
-                        data-modal-content-id="modal6" data-modal-title="La répétition"
-                        data-modal-close-text="Fermer" data-modal-close-title="Close it, really">
-                            <div class="first-content-element-img" >
-                                <img src="assets/img/1.creation/repetition_small.jpg" alt="" class="button">
-                            </div>
-                            <p>La répétition</p>
-                        </div>
+                            <li class="first-content-element-items">
+                                <div class="first-content-element-item js-modal" data-modal-prefix-class="simple"
+                                data-modal-content-id="modal6" data-modal-title="La répétition"
+                                data-modal-close-text="Fermer" data-modal-close-title="Close it, really">
+                                    <div class="first-content-element-img" >
+                                        <img src="assets/img/1.creation/repetition_small.jpg" alt="" class="button">
+                                    </div>
+                                    <p>La répétition</p>
+                                </div>
 
-                        <div class="hidden first-content-element-modal" id="modal6">
-                            <div class="first-content-element-item-text ">
-                                <img class ="first-content-element-item-img"
-                                src="assets/img/1.creation/repetition_small.jpg" alt="">
-                                <p>On ne monte pas sur scène sans avoir répété avant ! Les comédiens jouent
-                                    et rejouent de longues heures avant la représentation pour apprendre leur texte, pour s’imprégner de
-                                    l’espace et pour comprendre leur personnage. C’est le rôle de la metteuse en scène de diriger les
-                                    comédiens. C’est elle qui choisit où ils vont se placer sur scène ou encore quelles intonations ils doivent
-                                    prendre. Lorsque tu verras la représentation, tu n’y verras que du feu…</p>
-                            </div>
-                        </div>
-                    </li> 
+                                <div class="hidden first-content-element-modal" id="modal6">
+                                    <div class="first-content-element-item-text ">
+                                        <img class ="first-content-element-item-img"
+                                        src="assets/img/1.creation/repetition_small.jpg" alt="">
+                                        <p>On ne monte pas sur scène sans avoir répété avant ! Les comédiens jouent
+                                            et rejouent de longues heures avant la représentation pour apprendre leur texte, pour s’imprégner de
+                                            l’espace et pour comprendre leur personnage. C’est le rôle de la metteuse en scène de diriger les
+                                            comédiens. C’est elle qui choisit où ils vont se placer sur scène ou encore quelles intonations ils doivent
+                                            prendre. Lorsque tu verras la représentation, tu n’y verras que du feu…</p>
+                                    </div>
+                                </div>
+                            </li> 
 
-                    <li>
-                        <div class="first-content-element-img-item">
-                            <img src="assets/img/1.creation/arrow3.png" alt="">
-                        </div>
-                    </li>
+                            <li>
+                                <div class="first-content-element-img-item">
+                                    <img src="assets/img/1.creation/arrow3.png" alt="">
+                                </div>
+                            </li>
 
-                    <li class="first-content-element-items">
-                        <div class="first-content-element-item js-modal" data-modal-prefix-class="simple"
-                        data-modal-content-id="modal2" data-modal-title="Le décor"
-                        data-modal-close-text="Fermer" data-modal-close-title="Close it, really">
-                            <div class="first-content-element-img" >
-                                <img src="assets/img/1.creation/decor_small.jpg" alt="" class="button">
-                            </div>
-                            <p>Le décor</p>
-                        </div>
+                            <li class="first-content-element-items">
+                                <div class="first-content-element-item js-modal" data-modal-prefix-class="simple"
+                                data-modal-content-id="modal2" data-modal-title="Le décor"
+                                data-modal-close-text="Fermer" data-modal-close-title="Close it, really">
+                                    <div class="first-content-element-img" >
+                                        <img src="assets/img/1.creation/decor_small.jpg" alt="" class="button">
+                                    </div>
+                                    <p>Le décor</p>
+                                </div>
 
-                        <div class="hidden first-content-element-modal" id="modal2">
-                            <div class="first-content-element-item-text">
-                                <img class=" first-content-element-item-img" src="assets/img/1.creation/decor_small.jpg" alt="">
-                                <p>Pour que tu sois plongé.e dans l’univers raconté par la pièce, une scénographe
-                                    imagine et conçoit l’ensemble des décors. Il y des grands décors que tu trouveras facilement car ils
-                                    prennent beaucoup d’espace mais il y a aussi les petits décors avec tous les objets que tu trouveras sur
-                                    scène et qu’utilisent les comédiens.</p>
-                            </div>
-                        </div>
-                    </li> 
+                                <div class="hidden first-content-element-modal" id="modal2">
+                                    <div class="first-content-element-item-text">
+                                        <img class=" first-content-element-item-img" src="assets/img/1.creation/decor_small.jpg" alt="">
+                                        <p>Pour que tu sois plongé.e dans l’univers raconté par la pièce, une scénographe
+                                            imagine et conçoit l’ensemble des décors. Il y des grands décors que tu trouveras facilement car ils
+                                            prennent beaucoup d’espace mais il y a aussi les petits décors avec tous les objets que tu trouveras sur
+                                            scène et qu’utilisent les comédiens.</p>
+                                    </div>
+                                </div>
+                            </li> 
 
-                    <li>
-                        <div class="first-content-element-img-item">
-                            <img src="assets/img/1.creation/arrow4.png" alt="">
-                        </div>
-                    </li>
+                            <li>
+                                <div class="first-content-element-img-item">
+                                    <img src="assets/img/1.creation/arrow4.png" alt="">
+                                </div>
+                            </li>
 
-                    <li class="first-content-element-items">
-                        <div class="first-content-element-item js-modal" data-modal-prefix-class="simple"
-                        data-modal-content-id="modal3" data-modal-title="La musique"
-                        data-modal-close-text="Fermer" data-modal-close-title="Close it, really">
-                            <div class="first-content-element-img" >
-                                <img src="assets/img/1.creation/feuille2nb.png" alt="" class="button">
-                            </div>
-                            <p>La musique</p>
-                        </div>
+                            <li class="first-content-element-items">
+                                <div class="first-content-element-item js-modal" data-modal-prefix-class="simple"
+                                data-modal-content-id="modal3" data-modal-title="La musique"
+                                data-modal-close-text="Fermer" data-modal-close-title="Close it, really">
+                                    <div class="first-content-element-img" >
+                                        <img src="assets/img/1.creation/feuille2nb.png" alt="" class="button">
+                                    </div>
+                                    <p>La musique</p>
+                                </div>
 
-                        <div class="hidden first-content-element-modal" id="modal3">
-                            <div class="first-content-element-item-text ">
-                                <img class="first-content-element-item-img" src="assets/img/1.creation/feuille2nb.png" alt="">
-                                <p>Lorsqu’une pièce se joue, tu entends des musiques, tu entends des bruits, ici
-                                    et là. C’est le travail du compositeur qui écrit les partitions pour te plonger dans l’athmosphère et rythmer
-                                    le texte des comédiens.</p>
-                            </div>
-                        </div>
-                    </li> 
+                                <div class="hidden first-content-element-modal" id="modal3">
+                                    <div class="first-content-element-item-text ">
+                                        <img class="first-content-element-item-img" src="assets/img/1.creation/feuille2nb.png" alt="">
+                                        <p>Lorsqu’une pièce se joue, tu entends des musiques, tu entends des bruits, ici
+                                            et là. C’est le travail du compositeur qui écrit les partitions pour te plonger dans l’athmosphère et rythmer
+                                            le texte des comédiens.</p>
+                                    </div>
+                                </div>
+                            </li> 
 
-                    <li>
-                        <div class="first-content-element-img-item">
-                            <img src="assets/img/1.creation/arrow5.png" alt="">
-                        </div>
-                    </li>
+                            <li>
+                                <div class="first-content-element-img-item">
+                                    <img src="assets/img/1.creation/arrow5.png" alt="">
+                                </div>
+                            </li>
 
-                    <li class="first-content-element-items">
-                        <div class="first-content-element-item js-modal" data-modal-prefix-class="simple"
-                        data-modal-content-id="modal5" data-modal-title="Les costumes"
-                        data-modal-close-text="Fermer" data-modal-close-title="Close it, really">
-                            <div class="first-content-element-img" >
-                                <img src="assets/img/1.creation/costumes_small.jpg" alt="" class="button">
-                            </div>
-                            <p>Les costumes</p>
-                        </div>
+                            <li class="first-content-element-items">
+                                <div class="first-content-element-item js-modal" data-modal-prefix-class="simple"
+                                data-modal-content-id="modal5" data-modal-title="Les costumes"
+                                data-modal-close-text="Fermer" data-modal-close-title="Close it, really">
+                                    <div class="first-content-element-img" >
+                                        <img src="assets/img/1.creation/costumes_small.jpg" alt="" class="button">
+                                    </div>
+                                    <p>Les costumes</p>
+                                </div>
 
-                        <div class="hidden first-content-element-modal" id="modal5">
-                            <div class="first-content-element-item-text ">
-                                <img class="first-content-element-item-img" src="assets/img/1.creation/costumes_small.jpg" alt="">
-                                <p>Dans toutes les pièces de théâtre, il y a des costumes. Ils permettent
-                                    d’endosser la peau d’un autre personnage et participent à plonger la pièce dans un autre univers…. en
-                                    t’emmenant avec eux !
-                                    Et toi, as-tu déjà porté des costumes pour jouer un rôle ou pour t’amuser ?</p>
-                            </div>
-                        </div>
-                    </li> 
+                                <div class="hidden first-content-element-modal" id="modal5">
+                                    <div class="first-content-element-item-text ">
+                                        <img class="first-content-element-item-img" src="assets/img/1.creation/costumes_small.jpg" alt="">
+                                        <p>Dans toutes les pièces de théâtre, il y a des costumes. Ils permettent
+                                            d’endosser la peau d’un autre personnage et participent à plonger la pièce dans un autre univers…. en
+                                            t’emmenant avec eux !
+                                            Et toi, as-tu déjà porté des costumes pour jouer un rôle ou pour t’amuser ?</p>
+                                    </div>
+                                </div>
+                            </li> 
 
-                    <li>
-                        <div class="first-content-element-img-item">
-                            <img src="assets/img/1.creation/arrow6.png" alt="">
-                        </div>
-                    </li>
+                            <li>
+                                <div class="first-content-element-img-item">
+                                    <img src="assets/img/1.creation/arrow6.png" alt="">
+                                </div>
+                            </li>
 
-                    <li class="first-content-element-items">
-                        <div class="first-content-element-item js-modal" data-modal-prefix-class="simple"
-                        data-modal-content-id="modal4" data-modal-title="Les lumières"
-                        data-modal-close-text="Fermer" data-modal-close-title="Close it, really">
-                            <div class="first-content-element-img" >
-                                <img src="assets/img/1.creation/lumiere_small.jpg" alt="" class="button">
-                            </div>
-                            <p>Les lumières</p>
-                        </div>
+                            <li class="first-content-element-items">
+                                <div class="first-content-element-item js-modal" data-modal-prefix-class="simple"
+                                data-modal-content-id="modal4" data-modal-title="Les lumières"
+                                data-modal-close-text="Fermer" data-modal-close-title="Close it, really">
+                                    <div class="first-content-element-img" >
+                                        <img src="assets/img/1.creation/lumiere_small.jpg" alt="" class="button">
+                                    </div>
+                                    <p>Les lumières</p>
+                                </div>
 
-                        <div class="hidden first-content-element-modal" id="modal4">
-                            <div class="first-content-element-item-text">
-                                <img class=" first-content-element-item-img" src="assets/img/1.creation/lumiere_small.jpg" alt="">
-                                <p>Quand le rideau se lève, la salle est plongée dans le noir et les projecteurs se
-                                    braquent sur la scène et suivent les va-et-vient des comédiens ! Durant tout le spectacle, une véritable valse
-                                    des lumières se jouent et te permet de ne pas perdre une miette de la représentation.</p>
-                            </div>
-                        </div>
-                    </li> 
+                                <div class="hidden first-content-element-modal" id="modal4">
+                                    <div class="first-content-element-item-text">
+                                        <img class=" first-content-element-item-img" src="assets/img/1.creation/lumiere_small.jpg" alt="">
+                                        <p>Quand le rideau se lève, la salle est plongée dans le noir et les projecteurs se
+                                            braquent sur la scène et suivent les va-et-vient des comédiens ! Durant tout le spectacle, une véritable valse
+                                            des lumières se jouent et te permet de ne pas perdre une miette de la représentation.</p>
+                                    </div>
+                                </div>
+                            </li> 
 
-                    <li>
-                        <div class="first-content-element-img-item">
-                            <img src="assets/img/1.creation/arrow1.png" alt="">
-                        </div>
-                    </li>
+                            <li>
+                                <div class="first-content-element-img-item">
+                                    <img src="assets/img/1.creation/arrow1.png" alt="">
+                                </div>
+                            </li>
 
-                    <li class="first-content-element-items">
-                        <div class="first-content-element-item js-modal" data-modal-prefix-class="simple"
-                        data-modal-content-id="modal7" data-modal-title="La répétition"
-                        data-modal-close-text="Fermer" data-modal-close-title="Close it, really">
-                            <div class="first-content-element-img" >
-                                <img src="assets/img/1.creation/feuille2nb.png" alt="" class="button">
-                            </div>
-                            <p>La représentation</p>
-                        </div>
+                            <li class="first-content-element-items">
+                                <div class="first-content-element-item js-modal" data-modal-prefix-class="simple"
+                                data-modal-content-id="modal7" data-modal-title="La répétition"
+                                data-modal-close-text="Fermer" data-modal-close-title="Close it, really">
+                                    <div class="first-content-element-img" >
+                                        <img src="assets/img/1.creation/feuille2nb.png" alt="" class="button">
+                                    </div>
+                                    <p>La représentation</p>
+                                </div>
 
-                        <div class="hidden first-content-element-modal" id="modal7">
-                            <div class="first-content-element-item-text ">
-                                <img class="first-content-element-item-img" src="assets/img/1.creation/feuille2nb.png" alt="">
-                                <p>Et voilà, c’est le jour J ! Tout le monde est prêt pour que la pièce soit
-                                    jouée. Vite les derniers décors se mettent en place, les comédiens enfilent leur costume, tu t’installes
-                                    confortablement dans la salle, les lumières s’éteignent et le rideau se lève…</p>
-                            </div>
-                        </div>
-                    </li> 
-                </ul>
-                <p class="credits">Crédits photo : Patrick Ellouz</p>
-            </div>
+                                <div class="hidden first-content-element-modal" id="modal7">
+                                    <div class="first-content-element-item-text ">
+                                        <img class="first-content-element-item-img" src="assets/img/1.creation/feuille2nb.png" alt="">
+                                        <p>Et voilà, c’est le jour J ! Tout le monde est prêt pour que la pièce soit
+                                            jouée. Vite les derniers décors se mettent en place, les comédiens enfilent leur costume, tu t’installes
+                                            confortablement dans la salle, les lumières s’éteignent et le rideau se lève…</p>
+                                    </div>
+                                </div>
+                            </li> 
+                        </ul>
+                        <p class="credits">Crédits photo : Patrick Ellouz</p>
+                    </div>
+                </div>
             </section>
 
             <section class="second-content" id="second">
@@ -260,90 +264,105 @@
                 </div>
             </section>
 
-            <section class="third-content" id="third">
-                <div class="container">
-                    <h2>De l'autre côté... des trésors</h2>
-                    <p class="h2-subtitle"></p>
-                    <div class="third-content-element" id="container">
-                        <div class="scene scene--card">
-                            <div class="card" id="card1">
-                                <div class="card__face card__face--front">
-                                </div>
-                                <div class="card__face card__face--back">
-                                    <p>Pour te faire jouer, pour t’amuser, pour que tu te poses des questions et pour que tu rêves, nous  avons  créé  un  objet  curieux,  un  grand  pliage  où  plein  de  surprises  se  cachent... <br><br> Nous  avons travaillé  pour  créer  un  lien  entre  le  spectacle  et  toi.  Cet  objet  qu’on  appelle  «la  réplique»  est  à  toi alors fais-en ce qu’il te plait ! </p>
+            <section id="third">
+                <div class="third-content">
+                    <div class="container">
+                        <h2>De l'autre côté... des trésors</h2>
+                        <p class="h2-subtitle"></p>
+                        <div class="third-content-element" id="container">
+                            <div class="scene scene--card">
+                                <div class="card" id="card1">
+                                    <div class="card__face card__face--front">
+                                    </div>
+                                    <div class="card__face card__face--back">
+                                        <p>Pour te faire jouer, pour t’amuser, pour que tu te poses des questions et pour que tu rêves, nous  avons  créé  un  objet  curieux,  un  grand  pliage  où  plein  de  surprises  se  cachent... <br><br> Nous  avons travaillé  pour  créer  un  lien  entre  le  spectacle  et  toi.  Cet  objet  qu’on  appelle  «la  réplique»  est  à  toi alors fais-en ce qu’il te plait ! </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="scene scene--card">
-                            <div class="card" id="card2">
-                                <div class="card__face card__face--front">
-                                </div>
-                                <div class="card__face card__face--back">
-                                    <img src="assets/img/3.tresor/6.rideauPluie_small.jpg" alt=""> 
+                            <div class="scene scene--card">
+                                <div class="card" id="card2">
+                                    <div class="card__face card__face--front">
+                                    </div>
+                                    <div class="card__face card__face--back">
+                                        <img src="assets/img/3.tresor/6.rideauPluie_small.jpg" alt=""> 
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="scene scene--card">
-                            <div class="card" id="card3">
-                                <div class="card__face card__face--front">
-                                </div>
-                                <div class="card__face card__face--back">
-                                  <img src="assets/img/3.tresor/7.renardyeux_small.png" alt="">
+                            <div class="scene scene--card">
+                                <div class="card" id="card3">
+                                    <div class="card__face card__face--front">
+                                    </div>
+                                    <div class="card__face card__face--back">
+                                    <img src="assets/img/3.tresor/7.renardyeux_small.png" alt="">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="scene scene--card">
-                            <div class="card" id="card4">
-                                <div class="card__face card__face--front">
-                                </div>
-                                <div class="card__face card__face--back">
-                                  <audio controls src="assets/medias/tresors/1 - Pierre joue dans sa chambre.mp3"></audio> 
+                            <div class="scene scene--card">
+                                <div class="card" id="card4">
+                                    <div class="card__face card__face--front">
+                                    </div>
+                                    <div class="card__face card__face--back">
+                                    <audio controls src="assets/medias/tresors/1 - Pierre joue dans sa chambre.mp3"></audio> 
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="scene scene--card">
-                            <div class="card" id="card5">
-                                <div class="card__face card__face--front">
-                                </div>
-                                <div class="card__face card__face--back">
-                                    <img src="assets/img/3.tresor/5.decor_small.jpg" alt=""> 
+                            <div class="scene scene--card">
+                                <div class="card" id="card5">
+                                    <div class="card__face card__face--front">
+                                    </div>
+                                    <div class="card__face card__face--back">
+                                        <img src="assets/img/3.tresor/5.decor_small.jpg" alt=""> 
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="scene scene--card">
-                            <div class="card" id="card6">
-                                <div class="card__face card__face--front">
-                                </div>
-                                <div class="card__face card__face--back">
-                                    <p>OGDOG. — Quand la pluie touche le sol, pile, elle se transforme en billes.
-                                    <br>PIERRE. — Non, en flaques.
-                                    <br>OGDOG. — Non, en billes!
-                                    <br>PIERRE. — Pourquoi je l’ai jamais vu, alors?
-                                    <br>OGDOG. — Parce qu’elles s’éparpillent très très vite. Viens! 
-                                    </p>
+                            <div class="scene scene--card">
+                                <div class="card" id="card6">
+                                    <div class="card__face card__face--front">
+                                    </div>
+                                    <div class="card__face card__face--back">
+                                        <p>OGDOG. — Quand la pluie touche le sol, pile, elle se transforme en billes.
+                                        <br>PIERRE. — Non, en flaques.
+                                        <br>OGDOG. — Non, en billes!
+                                        <br>PIERRE. — Pourquoi je l’ai jamais vu, alors?
+                                        <br>OGDOG. — Parce qu’elles s’éparpillent très très vite. Viens! 
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="scene scene--card">
-                            <div class="card" id="card7">
-                                <div class="card__face card__face--front">
-                                </div>
-                                <div class="card__face card__face--back">
-                                    <img src="assets/img/3.tresor/4.boiteTresor_small.jpg" alt="">
+                            <div class="scene scene--card">
+                                <div class="card" id="card7">
+                                    <div class="card__face card__face--front">
+                                    </div>
+                                    <div class="card__face card__face--back">
+                                        <img src="assets/img/3.tresor/4.boiteTresor_small.jpg" alt="">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+
+                            <div class="scene scene--card">
+                                <div class="card" id="card8">
+                                    <div class="card__face card__face--front">
+                                    </div>
+                                    <div class="card__face card__face--back">
+                                        <video controls src="assets/medias/tresors/repliqueGif.mp4"></video>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-surprise-box">
+                                <div class="card-surprise">
+                                </div>
+                            </div>
+                            
+                        </div> 
                         
-                        <div class="card-surprise-box">
-                            <div class="card-surprise"></div>
-                        </div>
-                    </div> 
+                    </div>
                 </div>
             </section>
 
@@ -466,7 +485,7 @@
                             <div class="fourth-content-element-item-group">
                                 <h3 class="fourth-content-element-name">Patrick</h3>
                                 <figure>
-                                    <figcaption>Quel est le rôle de la lumière dans un spectacle ?</figcaption>
+                                    <figcaption>Quel est le rôle de la lumière dans un spectacle&nbsp;?</figcaption>
                                     <audio controls src="assets/medias/equipe/marc.mp3">
                                         Your browser does not support the
                                         <code>audio</code> element.
@@ -479,22 +498,27 @@
                 </div>
             </section>
 
-            <section class="fifth-content">
-                <div class="container">
-                    <h2>En savoir plus</h2>
-                    <p class="h2-subtitle"></p>
-                    <ul class="fifth-content-element">
-                        <li>
-                            <a class="fifth-content-element-title" href="">En savoir plus sur la Compagnie du Réfectoire
-                                <img src="assets/img/5.about/logo_cieRefectoire.png" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a class="fifth-content-element-title" href="www.lelabodescultures.com">En savoir plus sur le labo des cultures
-                                <img src="assets/img/5.about/logoLaboDesCultures.png" alt="">
-                            </a>
-                        </li>
-                    </ul>
+            <section id="fifth">
+                <div class="fifth-content">
+                    <div class="container">
+                        <h2>En savoir plus</h2>
+                        <p class="h2-subtitle"></p>
+                        <ul class="fifth-content-element">
+                            <li>
+                                <a class="fifth-content-element-btn" href="https://www.compagnie-du-refectoire.com/" target="_blank">la Compagnie du Réfectoire</a>
+                                <a href="https://www.compagnie-du-refectoire.com/" target="_blank">
+                                    <img src="assets/img/5.about/logo_cieRefectoire.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="fifth-content-element-btn" href="www.lelabodescultures.com" target="_blank">le labo des cultures
+                                </a>
+                                <a href="www.lelabodescultures.com" target="_blank"></a>
+                                    <img src="assets/img/5.about/logoLaboDesCultures.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
 
